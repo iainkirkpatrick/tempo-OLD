@@ -1,0 +1,17 @@
+{
+  "name": "tempo",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "budo main.js:bundle.js --live --port 2323 -- -r ./main.js:main",
+    "build": "browserify -r ./main.js:main > bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "iainkirkpatrick",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "budo": "^8.2.2"
+  }
+}
