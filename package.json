@@ -4,14 +4,36 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "budo main.js:bundle.js --live --port 2323 -- -r ./main.js:main",
-    "build": "browserify -r ./main.js:main > bundle.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:server-proxy": "nodemon server/proxy.js --exec babel-node | garnish --level debug",
+    "dev:server-static": "nodemon server/static.js --exec babel-node",
+    "dev:server-render": "nodemon server/render.js --exec babel-node",
+    "dev": "NODE_ENV=development npm-run-all -p dev:*"
   },
   "author": "iainkirkpatrick",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
     "browserify": "^13.0.1",
-    "budo": "^8.2.2"
+    "ecstatic-lr": "^1.0.1",
+    "garnish": "^5.2.0",
+    "nodemon": "^1.9.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.3.6",
+    "connect": "^3.4.1",
+    "ecstatic": "^1.4.1",
+    "http-proxy": "^1.13.3",
+    "lodash": "^4.13.1",
+    "npm-run-all": "^2.1.1",
+    "postcss": "^5.0.21",
+    "predirect": "^1.1.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "send-data": "^8.0.0",
+    "stilr": "^1.2.4"
   }
 }
