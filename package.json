@@ -7,6 +7,7 @@
     "dev:server-proxy": "nodemon server/proxy.js --exec babel-node | garnish --level debug",
     "dev:server-static": "nodemon server/static.js --exec babel-node",
     "dev:server-render": "nodemon server/render.js --exec babel-node",
+    "dev:client-render": "watchify client/render.js -o client/build/bundle.js",
     "dev": "NODE_ENV=development npm-run-all -p dev:*"
   },
   "author": "iainkirkpatrick",
@@ -18,7 +19,8 @@
     "browserify": "^13.0.1",
     "ecstatic-lr": "^1.0.1",
     "garnish": "^5.2.0",
-    "nodemon": "^1.9.2"
+    "nodemon": "^1.9.2",
+    "watchify": "^3.7.0"
   },
   "dependencies": {
     "autoprefixer": "^6.3.6",
