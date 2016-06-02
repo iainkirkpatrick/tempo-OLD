@@ -18,7 +18,7 @@ function createServer (config) {
   //   require('ecstatic-lr') : require('ecstatic')
 
   const app = Server()
-    .use(ecstatic(Url.format(config.static.url)))
+    .use(ecstatic(Url.format(config.static)))
 
   return http.createServer(app)
 }

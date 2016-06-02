@@ -1,3 +1,4 @@
+const join = require('path').join
 const nodeEnv = process.env.NODE_ENV
 
 const development = {
@@ -16,7 +17,8 @@ const development = {
       pathname: '/static/',
       port: 2323
     },
-    port: 6001
+    port: 6001,
+    root: join(__dirname, '..', 'client/build')
   },
   api: {
     url: {

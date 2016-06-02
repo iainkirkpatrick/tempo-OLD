@@ -1,3 +1,5 @@
+//TODO: this is pretty much verbatim from Co-nnection... ask Mikey how to rip and roar with it
+
 const config = require('./config')
 // const createServer = require('app/proxy').createServer
 
