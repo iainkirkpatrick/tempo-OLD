@@ -86,7 +86,7 @@ function renderFullPage (innerHtml, initialState) {
         <main>${ innerHtml }</main>
         <script>
           window.__data = ${ JSON.stringify(initialState) }
-          console.log('made with \u2764 by Enspiral Dev Academy http://devacademy.co.nz')
+          console.log('made with \u2764 by Enspiral Root Systems https://github.com/enspiral-root-systems')
         </script>
         <script src="${Url.resolve(Url.format(config.static.url), 'client/build/bundle.js')}"></script>
       </body>
