@@ -29,6 +29,7 @@
     "babel-cli": "^6.9.0",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
     "browserify": "^13.0.1",
     "ecstatic-lr": "^1.0.1",
     "garnish": "^5.2.0",
@@ -38,7 +39,7 @@
   "dependencies": {
     "autoprefixer": "^6.3.6",
     "connect": "^3.4.1",
-    "dogstack": "0.0.2",
+    "dogstack": "0.0.5",
     "ecstatic": "^1.4.1",
     "http-proxy": "^1.13.3",
     "lodash": "^4.13.1",
