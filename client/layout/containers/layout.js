@@ -5,8 +5,8 @@ import style from '../styles/layout'
 
 class LayoutContainer extends React.Component {
   render () {
-    return <div className={style.column}>
-      HI
+    return <div className={style.heading}>
+      <span>TEMPO</span>
     </div>
   }
 }

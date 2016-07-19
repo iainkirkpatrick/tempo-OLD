@@ -1,8 +1,9 @@
 import Stilr from 'stilr'
 
 export default Stilr.create({
-  column: {
+  heading: {
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    alignItems: 'center'
   }
 })
