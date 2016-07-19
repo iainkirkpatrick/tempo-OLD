@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm run link",
+    "link": "mkdir -p node_modules && rm -f node_modules/client && lnfs client node_modules/client",
     "dev:server-proxy": "nodemon server/proxy.js --exec babel-node | garnish --level debug",
     "dev:server-static": "nodemon server/static.js --exec babel-node",
     "dev:server-render": "nodemon server/render.js --exec babel-node",
@@ -42,6 +44,7 @@
     "dogstack": "0.0.5",
     "ecstatic": "^1.4.1",
     "http-proxy": "^1.13.3",
+    "lnfs-cli": "^1.0.1",
     "lodash": "^4.13.1",
     "npm-run-all": "^2.1.1",
     "postcss": "^5.0.21",
