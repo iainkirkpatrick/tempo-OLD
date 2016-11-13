@@ -1,0 +1,44 @@
+{
+  "name": "tempo",
+  "version": "0.0.1",
+  "description": "keep the tempo: app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development budo app/main.js:bundle.js --live -- -t envify"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react"
+          ]
+        }
+      ]
+    ]
+  },
+  "author": "iainkirkpatrick",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.16.0",
+    "moment-range": "^2.2.0",
+    "react": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.8.1",
+    "redux": "^3.6.0",
+    "reselect": "^2.5.4",
+    "stilr": "^1.2.4"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "budo": "^9.2.1",
+    "envify": "^3.4.1",
+    "uglifyify": "^3.0.3",
+    "watchify": "^3.7.0"
+  }
+}
