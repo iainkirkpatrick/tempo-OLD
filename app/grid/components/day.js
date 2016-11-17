@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
 
-import style from './style'
+import style from '../styles/day'
 
 const Day = React.createClass({
   getInitialState (props) {

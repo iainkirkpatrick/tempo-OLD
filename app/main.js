@@ -3,14 +3,14 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import StyleSheet from 'stilr'
 
-import App from './app'
+import Layout from './layout/containers/layout'
 
 // render stilr styles
 document.getElementById('stilr-stylesheet').textContent = StyleSheet.render()
 
 render(
   <Provider>
-    <App />
+    <Layout />
   </Provider>,
   document.querySelector('main')
 )

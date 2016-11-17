@@ -4,7 +4,7 @@ require('moment-range')
 
 import Day from './day'
 
-import style from './style'
+import style from '../styles/column'
 
 // probably bad manipulation of moment objects
 var now = moment()

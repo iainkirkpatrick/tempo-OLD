@@ -1,10 +1,10 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-import Header from './header'
-import Grid from './grid'
+import Header from '../components/header'
+import Grid from '../../grid/containers/grid'
 
-const App = React.createClass({
+const Layout = React.createClass({
   render () {
     return (
       <div>
@@ -15,4 +15,4 @@ const App = React.createClass({
   }
 })
 
-export default App
+export default Layout

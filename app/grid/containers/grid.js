@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react'
 
-import Column from './column'
+import Column from '../components/column'
 
-import style from './style'
+import style from '../styles/grid'
 
 var people = ['Iain', 'Sarah', 'Dan', 'Michael', 'Mikey']
 
